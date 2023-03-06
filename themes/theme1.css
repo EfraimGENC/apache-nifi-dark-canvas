@@ -1,0 +1,179 @@
+:root {
+    --primary: 160, 189, 169;
+    --white: 255, 255, 255;
+    --light: 241, 241, 241;
+    --dark1: 37, 37, 38;
+    --dark2: 45, 45, 48;
+}
+
+g.component,
+g.connection,
+text.stats-label,
+span.link {
+    font-family: Roboto;
+}
+
+#splash {
+    background: rgba(var(--dark1), 1);
+}
+
+md-progress-circular.md-default-theme.md-warn .md-inner .md-left .md-half-circle,
+md-progress-circular.md-warn .md-inner .md-left .md-half-circle {
+    border-left-color: rgba(var(--primary), 1);
+}
+
+md-progress-circular.md-default-theme.md-warn .md-inner .md-left .md-half-circle,
+md-progress-circular.md-warn .md-inner .md-left .md-half-circle,
+md-progress-circular.md-default-theme.md-warn .md-inner .md-right .md-half-circle,
+md-progress-circular.md-warn .md-inner .md-right .md-half-circle {
+    border-top-color: rgba(var(--primary), 1);
+}
+
+md-progress-circular.md-default-theme.md-warn .md-inner .md-right .md-half-circle,
+md-progress-circular.md-warn .md-inner .md-right .md-half-circle {
+    border-right-color: rgba(var(--primary), 1);
+}
+
+md-toolbar.md-default-theme.md-hue-1:not(.md-menu-toolbar).md-accent,
+md-toolbar.md-hue-1:not(.md-menu-toolbar).md-accent {
+    background-color: rgba(var(--dark2), 1);
+    color: rgba(var(--light), .87);
+}
+
+#current-user {
+    color: rgba(var(--light), .7);
+}
+
+#search-button {
+    background-color: rgba(var(--primary), .7)!important;
+}
+
+.context-menu {
+    background-color: rgba(var(--dark1), 1);
+    border: 1px dashed #000;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+    color: rgba(var(--light), .9);
+}
+
+div.context-menu-item-text {
+    color: rgba(var(--light), .9);
+}
+
+#global-menu-button {
+    background-color: rgba(var(--dark2), 1);
+}
+#search-button,
+#bulletin-button {
+    background-color: rgba(var(--primary), 1);
+}
+#header .component-button:disabled {
+    background-color: rgba(var(--light), .02);
+}
+#header .component-button .component-button-grip {
+        background: rgba(var(--light), .1);
+}
+#header button:disabled.component-button {
+    color: rgba(var(--light), .1)!important;
+}
+#header .icon,
+#header .fa,
+.graph-control-header-icon.fa,
+div.graph-control div.graph-control-expansion {
+    color: rgba(var(--primary), 1);
+}
+div.graph-control {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+    background-color: rgba(var(--dark1), 0.9);
+    border-top: 1px dashed #000;
+    border-right: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+}
+div.graph-control button {
+    line-height: 28px;
+    border: none;
+    background: none;
+    color: rgba(var(--light), 1);
+}
+div.graph-control button:disabled {
+    color: #ccdadb;
+    cursor: not-allowed;
+    border: none;
+}
+#breadcrumbs {
+    background-color: rgba(62, 62, 66, 0.9);
+}
+#data-flow-title-container {
+    color: rgba(241, 241, 241, .87);
+}
+#breadcrumbs-left-border,
+#breadcrumbs-right-border {
+    background: none;
+}
+#flow-status .fa span,
+span.link,
+stats-label,
+#operation-context-name,
+#operation-context-type {
+    color: rgba(var(--light), 1);
+}
+text.processor-name,
+text.stats-label,
+text.process-group-name,
+text.process-group-contents-count {
+    fill: rgba(var(--light), .9);
+}
+text.stats-value {
+    fill: rgba(var(--light), .9);
+}
+text.port-name {
+    fill: rgba(var(--light), 1);
+}
+
+#operation-context-id {
+    color: rgba(var(--light), 1);
+}
+#flow-status {
+    background-color: rgba(var(--dark2), 1);
+    border-bottom: 1px solid #aabbc3;
+}
+#canvas-container {
+    background-color: rgba(var(--dark2), 1);
+    background-image: linear-gradient(to right, rgba(var(--primary), .2) 1px, transparent 1px), linear-gradient(to bottom, rgba(var(--primary), .3) 1px, transparent 1px);
+}
+g.connection path.connection-path {
+    stroke: rgba(var(--light), .5);
+}
+g.connection > rect.body {
+    fill: rgba(var(--dark1), 1);
+}
+g.component > rect.body {
+    fill: rgba(var(--dark1), 1);
+}
+g.component rect.body.unauthorized {
+    fill: rgba(var(--dark1), 1);
+}
+rect.processor-icon-container,
+g.connection rect.body,
+g.connection-name-container > rect.connection-label-background,
+g.connection-from-container > rect.connection-label-background,
+g.connection-to-container > rect.connection-label-background {
+    fill: rgba(var(--dark1), 1);
+}
+g.process-group > rect:nth-child(3) {
+    fill: rgba(var(--primary), .1);
+}
+g.processor-canvas-details > rect:nth-child(4),
+g.processor-canvas-details > rect:nth-child(8),
+g.process-group-details > rect:nth-child(1),
+g.process-group-details > rect:nth-child(25),
+g.process-group-details > rect:nth-child(29),
+g.process-group-details > rect:nth-child(2) {
+    fill: rgba(var(--dark1), 1);
+}
+g.processor-canvas-details > rect:nth-child(6),
+g.processor-canvas-details > rect:nth-child(10),
+g.process-group-details > rect:nth-child(27),
+g.process-group-details > rect:nth-child(31),
+g.queued-container > rect.connection-label-background {
+    fill: rgb(62, 62, 66);
+}
